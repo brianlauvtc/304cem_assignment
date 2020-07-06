@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<title>Amazing Movie</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px" >
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href=""  class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+     <img src="assets/img/camera.png" style="width:45%;" class="w3-round"><br><br>
+    <table style="width:100%" id="myTable">
+	 <tr>
+  
+   <td id="day"></td>
+  </tr>
+  
+	<tr>
+  
+   <td>Tomorrow temperature : </td>
+  </tr>
+  <tr>
+   
+   <td id="temp"></td>	
+  </tr>
+</table>
+	<h4><b>Movie</b></h4>
+  
+  </div>
+  <div class="w3-bar-block">
+    <a href="/menber"  class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>All the movie</a> 
+	<a href="/fav"  class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Favoutite List</a> 
+	<a href="/yourmovie"  class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Your Movie</a>
+	<a href="/personal"  class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Update Personal Information</a> 
+		<button   class="w3-bar-item w3-button w3-padding w3-text-teal" id="logout"><i class="fas fa-sign-out-alt"></i>Logout</button>
+  </div>
+ 
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity"  style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" ><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Your Personal Information</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+     
+    </div>
+    </div>
+  </header>
+  
+
+
+   
+  <p><label id="userEmail" for="">Your Email : </label>	</p>
+
+  <p><label  id="OlduserName" for="Newusername">User Name : </label>
+  <input type="text" id="Newusername" style="visibility:hidden" value="">
+  <button id="EditUserName" style="visibility:visible">Edit </button>
+   <button id="submitEdit" style="visibility:hidden">Submit </button>
+   <button id="CancelEdit" style="visibility:hidden">Cancel</button></p>
+   <p><label  id="Oldpassword" for="Newusername">Password : </label>
+  <input type="password" id="oldpasswordinput" style="visibility:hidden" value="">
+  <button id="Editpassword" style="visibility:visible">Edit </button></p>
+   <p><label  id="newpasswordtext1" style="visibility:hidden" for="Newusername">New Password : </label>
+  <input type="password" id="Newpasswordinput1" style="visibility:hidden" value=""></p>
+   <p><label  id="newpasswordtext2" style="visibility:hidden" for="Newusername">New Password Again: </label>
+  <input type="password" id="Newpasswordinput2" style="visibility:hidden" value=""></p>
+   <button id="submitEditpass" style="visibility:hidden">Submit </button>
+   <button id="CancelEditpass" style="visibility:hidden">Cancel</button></p>
+  
+  
+
+ 
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+<script src="js/menberdetailscript.js"></script>
+
+
+</body>
+</html>

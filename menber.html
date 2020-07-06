@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<title>Amazing Movie</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px" >
+
+
+
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href=""  class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+	
+     <img src="assets/img/camera.png" style="width:45%;" class="w3-round"> 
+		
+	  
+	 <br><br>
+	 
+	  <table style="width:100%" id="myTable">
+	 <tr>
+  
+   <td id="day"></td>
+  </tr>
+  
+	<tr>
+  
+   <td>Tomorrow temperature : </td>
+  </tr>
+  <tr>
+   
+   <td id="temp"></td>	
+  </tr>
+</table>
+    <h4><b>Movie</b></h4>
+  
+  </div>
+  <div class="w3-bar-block">
+
+    <a href="/menber"  class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>All the movie</a> 
+	<a href="/fav"  class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Favoutite List</a>
+	<a href="/yourmovie"  class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Your Movie</a>
+	<a href="/personal"  class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Update Personal Information</a> 
+	
+	<button  class="w3-bar-item w3-button w3-padding w3-text-teal" id="logout"><i class="fas fa-sign-out-alt"></i>Logout</a> 
+	
+
+  </div>
+
+   
+  
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity"  style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" ><i class="fa fa-bars"></i></span>
+	
+    <div class="w3-container">
+    <h1><b>All the movie</b></h1>
+	
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <a href="/addnew"  class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Add a movie to the website</a>
+	  
+    </div>
+	
+    </div>
+	
+	
+  
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding" >
+    <div class="w3-third w3-container w3-margin-bottom" style="visibility:hidden" id="div1">
+      <img src="assets/img/Ant-Man_and_the_Wasp_poster.jpg" alt="" style="width:100%" class="w3-hover-opacity" id="image1">
+      <div class="w3-container w3-white">
+        <p><b id="title1">Lorem Ipsum</b></p>
+        <p id="des1">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+		</div>
+		<div class="w3-container w3-white">
+		<button type="button" id="b1">Show Details</button> 
+		<button type="button" id="f1">Add to Favorite List</button>
+		
+      </div>
+	   <div class="w3-container w3-white">
+		  <p></p>
+		  </div>
+    </div>
+	<div class="w3-third w3-container w3-margin-bottom" style="visibility:hidden" id="div2">
+      <img src="assets/img/Ant-Man_and_the_Wasp_poster.jpg" alt="" style="width:100%" class="w3-hover-opacity" id="image2">
+      <div class="w3-container w3-white">
+        <p><b id="title2">Lorem Ipsum</b></p>
+        <p id="des2">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+		</div>
+		<div class="w3-container w3-white">
+		<button type="button" id="b2">Show Details</button> 
+		<button type="button" id="f2">Add to Favorite List</button> 
+	
+      </div>
+	   <div class="w3-container w3-white">
+		  <p></p>
+		  </div>
+    </div><div class="w3-third w3-container w3-margin-bottom" style="visibility:hidden" id="div3">
+      <img src="assets/img/Ant-Man_and_the_Wasp_poster.jpg" alt="" style="width:100%" class="w3-hover-opacity" id="image3">
+      <div class="w3-container w3-white">
+        <p><b id="title3">Lorem Ipsum</b></p>
+        <p id="des3">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+		</div>
+		<div class="w3-container w3-white">
+		<button type="button" id="b3">Show Details</button> 
+		<button type="button" id="f3">Add to Favorite List</button> 
+			
+      </div>
+	   <div class="w3-container w3-white">
+		  <p></p>
+		  </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+   <div class="w3-third w3-container w3-margin-bottom" style="visibility:hidden" id="div4">
+      <img src="assets/img/Ant-Man_and_the_Wasp_poster.jpg" alt="" style="width:100%" class="w3-hover-opacity" id="image4">
+      <div class="w3-container w3-white">
+        <p><b id="title4">Lorem Ipsum</b></p>
+        <p id="des4">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+		</div>
+		<div class="w3-container w3-white">
+		<button type="button" id="b4">Show Details</button> 
+		<button type="button" id="f4">Add to Favorite List</button>  
+		
+      </div>
+	   <div class="w3-container w3-white">
+		  <p></p>
+		  </div>
+    </div>
+	<div class="w3-third w3-container w3-margin-bottom" style="visibility:hidden" id="div5">
+      <img src="assets/img/Ant-Man_and_the_Wasp_poster.jpg" alt="" style="width:100%" class="w3-hover-opacity" id="image5">
+      <div class="w3-container w3-white">
+        <p><b id="title5">Lorem Ipsum</b></p>
+        <p id="des5">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+		</div>
+		<div class="w3-container w3-white">
+		<button type="button" id="b5">Show Details</button> 
+		<button type="button" id="f5">Add to Favorite List</button> 
+			
+      </div>
+	   <div class="w3-container w3-white">
+		  <p></p>
+		  </div>
+    </div>
+	
+	<div class="w3-third w3-container w3-margin-bottom" style="visibility:hidden" id="div6">
+      <img src="assets/img/Ant-Man_and_the_Wasp_poster.jpg" alt="" style="width:100%" class="w3-hover-opacity" id="image6">
+      <div class="w3-container w3-white">
+        <p><b id="title6">Lorem Ipsum</b></p>
+        <p id="des6">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+		</div>
+		<div class="w3-container w3-white">
+		<button type="button" id="b6" >Show Details</button> 
+		<button type="button" id="f6">Add to Favorite List</button> 
+	 	
+      </div>
+	   <div class="w3-container w3-white">
+		  <p></p>
+		  </div>
+    </div>
+  </div>
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <button type="button"  class="w3-bar-item w3-button w3-hover-black" onclick="previouspage()"id="previouspageID">«</button> 
+		<h6 id="PageNumber"></h6> 
+      <button type="button"  class="w3-bar-item w3-button w3-hover-black" onclick="nextpage()" id="nextpageID">»</button> 
+    </div>
+  </div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="js/menberscripts.js"></script>
+
+
+
+</body>
+</html>
